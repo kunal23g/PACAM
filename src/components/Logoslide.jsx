@@ -18,7 +18,7 @@ const Logoslide = () => {
       </div>
 
       <div>
-        <Marquee direction="right" speed={100} delay={5}>
+        <Marquee direction="right" speed={100} delay={1}>
           <div className="mx-7">
             <img src={img1} alt="Technology Partner 1" className="w-20 h-20 object-contain" />
           </div>
