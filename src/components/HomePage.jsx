@@ -12,6 +12,7 @@ import Pfeatures from './Pfeatures'
 const HomePage=()=> {
     return (
         <>
+        <div>Hello</div>
         <HeroSection />
               <Logoslide />
         <Problems/>
