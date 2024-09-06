@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
+import logo2 from "../assets/logo2.png";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -89,7 +90,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between px-4 py-3 border-b border-gray-600">
           <Link to="/" onClick={() => setMobileDrawerOpen(false)}>
-            <img className="h-8 w-auto" src={logo} alt="Logo" />
+            <img className="h-8 w-auto px-3" src={logo2} alt="Logo" />
           </Link>
           <button
             onClick={toggleNavbar}
