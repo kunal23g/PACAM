@@ -13,7 +13,7 @@ const Contact=()=> {
         <div className='  md:justify-center '>
             <Link
                 to="/contact"
-             className=" flex  justify-center py-[1rem] px-[1rem] mt-5    text-white bg-black">
+             className=" flex  justify-center py-[1rem] px-[1rem] mt-5 rounded-md   text-white bg-black">
                 Contact Us<CircleArrowRight size={19} className="ml-2 mt-[2px] "  />
                 </Link>
             
