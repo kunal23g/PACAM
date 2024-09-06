@@ -12,7 +12,7 @@ import pb3 from "../assets/Problems3.png"
 
 
             <div className="p-2 ">
-            <h6 className="text-xs text-gray-600 px-4  mb-3">Customer Service: Create relationships</h6>
+            <h6 className="text-xm text-gray-600 px-4  mb-3">Customer Service: Create relationships</h6>
             <h1 className="text-4xl font-Inter text-indigo-950 px-3 mb-4">Swiftly Handle Customer Claims with Ease</h1>
 
             </div>            
