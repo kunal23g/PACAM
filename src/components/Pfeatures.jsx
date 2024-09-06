@@ -15,7 +15,7 @@ import { Link } from "react-router-dom"
 const Pfeatures=()=> {
   const [activeButton, setActiveButton] = useState(1)
 
-    const [img, setImg] = useState(photo);
+    const [img, setImg] = useState(simple);
     const [Li, setLi]  = useState(featureItems1);
     const handleImg=(index)=>{
       setActiveButton(index)
@@ -38,7 +38,7 @@ const Pfeatures=()=> {
     return (
       <div className="my-20 grid grid-cols-1 lg:grid-cols-7 ">
       <div className="col-span-1 lg:col-span-4 justify-between bg-[#F7EFE5] p-6 lg:p-16">
-        <div className="mt-10 flex flex-nowrap justify-between lg:max-w-[80%] gap-2">
+        <div className="mt-10 flex flex-nowrap   justify-between gap-2 lg:max-w-[80%] ">
           <button onClick={() => handleImg(1)} 
             
            className={`py-4 px-6 text-sm font-light rounded-md
@@ -78,7 +78,7 @@ const Pfeatures=()=> {
       </div>
     
       <div className="col-span-1 lg:col-span-3 w-full bg-[#F3E2D3] flex justify-center items-center">
-        <img className="max-w-full h-auto lg:h-[500px] mx-auto" src={img} alt="package" />
+        <img className=" rounded-lg shadow-lg w-full h-auto object-cover" src={img} alt="package" />
       </div>
     </div>
     
