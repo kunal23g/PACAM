@@ -15,7 +15,7 @@ const Pfeatures=()=> {
   const [activeButton, setActiveButton] = useState(1)
 
     const [img, setImg] = useState(photo);
-    const [Li, setLi]  = useState(featureItems2);
+    const [Li, setLi]  = useState(featureItems1);
     const handleImg=(index)=>{
       setActiveButton(index)
         if(index===1)
