@@ -14,7 +14,9 @@ const Footer = () => {
         <div className=" lg:pl-10 bg-black bg-opacity-[94%]	">
             <div className=' text-white py-20 grid md:grid-cols-2  text-white'>
                 <div className=" lg:col-span-1 px-5 ">
-                    <img className="h-10 w-auto" src={logo2} alt="" />
+                    <Link to="/">
+                      <img className="h-10 w-auto mb-5" src={logo2} alt="Logo" />
+                    </Link>  
                     <Link   to="/contact"                
                      className='py-4'>Contact us start now <br /><span className="underline hover:cursor-pointer">Let's talk</span>
                     </Link>
