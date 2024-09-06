@@ -3,7 +3,7 @@
 import { CircleArrowRight } from 'lucide-react'
 import { MoveRight } from 'lucide-react';
 import home from "../assets/home.png";
-
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
