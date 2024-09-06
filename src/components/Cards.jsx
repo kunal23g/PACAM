@@ -21,7 +21,7 @@ const Cards=()=>{
     <h1 className="text-2xl lg:text-4xl mb-5">See it Clearly, <br />Video Evidence</h1>
 
     <h1 className=" mb-20 lg:text-base text-gray-600 text-justify md:h-[80px]">
-      95% of compensaton costs drop because the video log can be used as evidence to resolve claims 
+      95% of compensation costs drop because the video log can be used as evidence to resolve claims. 
     </h1>
 
     <div className="p-4 bg-[#F3E2D3]">
