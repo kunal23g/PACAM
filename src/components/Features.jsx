@@ -202,10 +202,10 @@ const Features=()=> {
         <h1 className="text-4xl lg:text-5xl font-bold text-[#041558] mb-6 lg:mb-10">
           Empower Innovation with APIs
         </h1>
-        <div className="flex flex-col md:flex-row flex-nowrap lg:justify-between justify-around lg:gap-2">
+        <div className="flex  flex-col md:flex-row flex-nowrap lg:justify-between justify-around lg:max-w-[80%] gap-1 ">
           <button
             onClick={() => handleImg(1)} 
-            className={`py-4 px-6 text-sm font-light ${
+            className={`py-4 px-6 text-sm font-light rounded-md ${
               activeButton === 1 ? 'bg-[#041558] text-white' : 'hover:bg-[#041558] hover:text-white'
             }`}
           >
@@ -213,7 +213,7 @@ const Features=()=> {
           </button>
           <button
             onClick={() => handleImg(2)} 
-            className={`py-4 px-6 text-sm font-light ${
+            className={`py-4 px-6 text-sm font-light rounded-md ${
               activeButton === 2 ? 'bg-[#041558] text-white' : 'hover:bg-[#041558] hover:text-white'
             }`}
           >
@@ -221,7 +221,7 @@ const Features=()=> {
           </button>
           <button
             onClick={() => handleImg(3)} 
-            className={`py-4 px-6 text-sm font-light ${
+            className={`py-4 px-6 text-sm font-light rounded-md ${
               activeButton === 3 ? 'bg-[#041558] text-white' : 'hover:bg-[#041558] hover:text-white'
             }`}
           >
