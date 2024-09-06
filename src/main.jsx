@@ -52,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "integration",
         element: <Integration/>
+      },
+      {
+        path:"pricing",
+        element:<ContactUs/>
       }
     ]
   }
