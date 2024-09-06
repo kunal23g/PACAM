@@ -84,7 +84,7 @@ const Footer = () => {
                 <div>
                   <p className="text-gray-400 mb-4 lg:px-5">© 2023 Pacam. All rights reserved.</p>
                   </div>
-                  <div className="flex space-x-4 pr-5">
+                  <div className="flex space-x-4 p-4 md:pr-5">
   <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
     <FaYoutubeSquare className='w-5 h-5' />
   </a>
