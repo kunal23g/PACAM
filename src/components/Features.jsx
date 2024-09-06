@@ -178,14 +178,14 @@ const Features=()=> {
     <div className='p-5 col-span-1 flex flex-col bg-[#F3F8FF]'>
     <h1 className="  text-xs uppercase text-neutral-500 font-light pl-1">Message broadcasting</h1>
     <h1 className='lg:h-[50px] text-2xl pl-1'>Efffortless Bulk Video Log Distribution</h1>
-    <p className="  text-xm mt-4 h-[100px] text-justify text-neutral-500 font-light pl-1">After uploading order details to the CMS, you can use the bulk messaging feature to send video logs to customers globally. You can send messages via SMS or email and track their performance directly within the CMS</p>
-    <img className='mt-5 mb-9' src={Email1} alt="" />
+    <p className="  text-xm mt-4 lg:h-[100px] text-justify text-neutral-500 font-light pl-1">After uploading order details to the CMS, you can use the bulk messaging feature to send video logs to customers globally. You can send messages via SMS or email and track their performance directly within the CMS</p>
+    <img className='mt-10 md:mt-5 mb-9' src={Email1} alt="" />
      </div>
     <div className='p-5 col-span-1 flex flex-col bg-[#F3F8FF]'>
     <h1 className="  text-xs  text-neutral-500 font-light pl-1">VIDEO MEMO</h1>
     <h1 className='lg:h-[50px] text-2xl pl-1'>Make Every Customer Interaction Special</h1>
-    <p className="  text-xm mt-4 text-justify h-[100px] text-neutral-500 font-light pl-1">Enhance customer experience with video messages for order confirmations, review widgets, and status updates. Personalize with your logo or a pre-roll ad for extra impact.</p>
-    <img className='mt-5 mb-9' src={Email2} alt="" />
+    <p className="  text-xm mt-4 text-justify lg:h-[100px] text-neutral-500 font-light pl-1">Enhance customer experience with video messages for order confirmations, review widgets, and status updates. Personalize with your logo or a pre-roll ad for extra impact.</p>
+    <img className='mt-10 md:mt-5 mb-9' src={Email2} alt="" />
      </div>
     
 
