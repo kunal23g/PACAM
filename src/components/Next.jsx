@@ -13,11 +13,11 @@ const Next=()=> {
             </div>
             <div className=' flex md:justify-center '>
                 <Link to="/contact"
-                className=" flex  justify-center py-[1rem] px-[1rem] mt-5    text-white bg-black">
+                className="rounded-md flex  justify-center py-[1rem] px-[1rem] mt-5    text-white bg-black">
                     Contact Us<CircleArrowRight size={20} className="ml-2 mt-[1px] "  />
                     </Link> 
                 <Link to="/contact"
-                className=" flex  text-center py-[1rem] px-[1rem] mt-5 ml-5   text-white bg-black">
+                className="rounded-md flex  text-center py-[1rem] px-[1rem] mt-5 ml-5   text-white bg-black">
                     Discover Now<CircleArrowRight size={20} className="ml-2 mt-[1px]"  />
                     </Link> 
                 
