@@ -21,19 +21,19 @@ const HeroSection = () => {
         Ensuring transparency and trust with every scan, so you always know your  product's authenticity
       </p>
       <div className="flex justify-center my-10">
-      <button
+      <Link
+          to="/contact"
 
         className="py-3 px-4 mx-3 bg-black text-white rounded-md border flex items-center hover:bg-black hover:text-white cursor:pointer">
         Get Started
         <CircleArrowRight size={20} absoluteStrokeWidth={true} className="ml-2 "  />
-        </button>
+        </Link>
     
-  <button
-
-    className="py-3 px-4 mx-3 rounded-md border flex items-center hover:bg-black hover:text-white cursor:pointer">
-    Discover Now
-    <CircleArrowRight size={20} absoluteStrokeWidth={true} className="ml-2 "  />
-  </button>
+        <Link
+                to="/contact"
+             className=" py-3 px-4 mx-3 rounded-md border flex items-center hover:bg-black hover:text-white cursor:pointer">
+                Discover Now<CircleArrowRight size={20}  absoluteStrokeWidth={true} className="ml-2"  />
+                </Link>
   </div>
   <img  className='p-3 ' src={home} alt="/home" />
 </div>
