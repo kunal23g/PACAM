@@ -9,7 +9,7 @@ const Cards=()=>{
     return (
         <div className=" max-w-[1240px] mx-auto py-20 flex flex-col px-2  ">
             <div className="p-2 px-3">
-            <h6 className="text-xs text-gray-600   mb-3">Logistic Center: Improve Accuracy</h6>
+            <h6 className="text-xm text-gray-600   mb-3">Logistic Center: Improve Accuracy</h6>
             <h1 className="text-4xl  font-light text-dark-blue mb-4">Streamline Your Workflow with Ease</h1>
 
 
