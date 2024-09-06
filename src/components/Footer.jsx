@@ -1,30 +1,28 @@
 import React, { useState } from 'react';
-import logo from "../assets/logo.png";
-import { FaYoutubeSquare,FaTwitterSquare,FaFacebookSquare,FaInstagramSquare  } from "react-icons/fa";
+import logo2 from "../assets/logo2.png";
+import { FaYoutubeSquare,FaTwitterSquare,FaFacebookSquare,FaInstagramSquare,FaPhoneAlt   } from "react-icons/fa";
+import { MdOutgoingMail } from "react-icons/md";
+import { Link } from 'react-router-dom';
+import { CircleArrowRight } from 'lucide-react'
+
 const Footer = () => {
-    const [price, setPrice] = useState('');
-    const [displayPrice, setDisplayPrice] = useState('');
-    const [isOpen,setIsOpen] =useState(false)
-    const [isInput,setIsInput] =useState(false)
-    const handlePriceSubmit = (e) => {
-        e.preventDefault();
-        setDisplayPrice(price);
-        setPrice('');
-    };
+
 
     return (
       <>
      
-        <div className=" bg-black">
+        <div className=" lg:pl-10 bg-black bg-opacity-[94%]	">
             <div className=' text-white py-20 grid md:grid-cols-2  text-white'>
-                <div className=" lg:col-span-1 px-5 lg:px-10">
-                    <img className="h-8 w-auto" src={logo} alt="" />
-                    <p className='py-4'>Contact us start now <br /><span className="underline hover:cursor-pointer">Let's talk</span></p>
+                <div className=" lg:col-span-1 px-5 ">
+                    <img className="h-10 w-auto" src={logo2} alt="" />
+                    <Link   to="/contact"                
+                     className='py-4'>Contact us start now <br /><span className="underline hover:cursor-pointer">Let's talk</span>
+                    </Link>
                     <div className='flex my-6'>
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@gmail.com" target="_blank" rel="noopener noreferrer">
-                           <button className="py-[0.5rem] px-[1rem] text-xs border border-gray-400 mr-4">hello@gmail.com</button>
+                           <button className="flex items-center py-[0.5rem] px-[1rem] text-xs border border-gray-400 hover:bg-white hover:text-black font-bold transition duration-300 mr-4">< MdOutgoingMail  className='w-5 h-5  mr-2'/> hello@gmail.com</button>
                           </a>
-                        <button className="py-[0.5rem] px-[1rem] text-xs border border-gray-400 mr-4">9211</button>
+                        <button className="flex items-center py-[0.5rem] px-[1rem] text-xs font-bold border border-gray-400 mr-4 hover:bg-white hover:text-black transition duration-300"><FaPhoneAlt   className='w-3 h-4  mr-2'/>9211</button>
                     </div>
                     
                 </div>
@@ -46,7 +44,7 @@ const Footer = () => {
                     <div>
                         <h6 className='font-medium'>Support</h6>
                         <ul>
-                            <li  onClick={() => setIsInput(!(isInput))} className='py-2 text-xs hover:underline hover:cursor-pointer'>Pricing</li>
+                            <li className='py-2 text-xs hover:underline hover:cursor-pointer'>Pricing</li>
                             <li className='py-2 text-xs hover:underline hover:cursor-pointer'>Documentation</li>
                             <li className='py-2 text-xs hover:underline hover:cursor-pointer'>Guides</li>
                             <li className='py-2 text-xs hover:underline hover:cursor-pointer'>API Status</li>
@@ -67,32 +65,10 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="lg:col-span-1 px-10">
-                {isInput && (<button
-        onClick={() => setIsOpen(!(isOpen))}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
-        Open Input Box
-      </button>)}
-      {isInput && isOpen && (<form onSubmit={handlePriceSubmit} className="mb-4">
-                        <input
-                            type="text"
-                            value={price}
-                            onChange={(e) => setPrice(e.target.value)}
-                            placeholder="Enter price"
-                            className="py-2 px-3 bg-gray-700 text-white rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
-                        <button type="submit" className="py-2 px-4 bg-blue-500 text-white rounded-r-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            Submit
-                        </button>
-                    </form>)}
-                    {isInput&&isOpen && displayPrice && (
-                        <p className="text-white">Entered Price: ${displayPrice}</p>
-                    )}
-                </div>
+                
             </div>
             
-            <div className="flex md:flex-row flex-col justify-between mx-3 pt-4 border-t bg-black border-gray-700">
+            <div className=" flex md:flex-row flex-col justify-between mx-3 pt-4 border-t  bg-opacity-95 border-gray-700">
                 <div>
                   <p className="text-gray-400 mb-4 lg:px-5">© 2023 Pacam. All rights reserved.</p>
                   </div>
