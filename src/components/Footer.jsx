@@ -6,7 +6,11 @@ import { Link } from 'react-router-dom';
 import { CircleArrowRight } from 'lucide-react'
 
 const Footer = () => {
-
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.location.href = `mailto:pacam@gmail.com`;
+    
+  };
 
     return (
       <>
@@ -16,14 +20,20 @@ const Footer = () => {
                 <div className=" lg:col-span-1 px-5 ">
                     <Link to="/">
                       <img className="h-10 w-auto mb-5" src={logo2} alt="Logo" />
-                    </Link>  
-                    <Link   to="/contact"                
+                    </Link>                    <Link   to="/contact"                
                      className='py-4'>Contact us start now <br /><span className="underline hover:cursor-pointer">Let's talk</span>
                     </Link>
                     <div className='flex my-6'>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@gmail.com" target="_blank" rel="noopener noreferrer">
-                           <button className="flex items-center py-[0.5rem] px-[1rem] text-xs border border-gray-400 hover:bg-white hover:text-black font-bold transition duration-300 mr-4">< MdOutgoingMail  className='w-5 h-5  mr-2'/> hello@gmail.com</button>
-                          </a>
+                    <a 
+                        href={`mailto:pacam@gmail.com`}
+                        onClick={handleClick}
+                        
+                      >
+                        <button className="flex items-center py-[0.5rem] px-[1rem] text-xs border border-gray-400 hover:bg-white hover:text-black font-bold transition duration-300 mr-4">
+                          <MdOutgoingMail className='w-5 h-5 mr-2'/>
+                          pacam@gmail.com
+                        </button>
+                    </a>
                         <button className="flex items-center py-[0.5rem] px-[1rem] text-xs font-bold border border-gray-400 mr-4 hover:bg-white hover:text-black transition duration-300"><FaPhoneAlt   className='w-3 h-4  mr-2'/>9211</button>
                     </div>
                     
