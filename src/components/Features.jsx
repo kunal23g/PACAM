@@ -303,7 +303,7 @@ const Features=()=> {
 
         </div>
         <div className='  md:justify-center '>
-         <Link to="/contact"  className=" flex  justify-center py-[1rem] px-[1rem] mt-5    text-white bg-black">
+         <Link to="/contact"  className=" flex rounded-md justify-center py-[1rem] px-[1rem] mt-5    text-white bg-black">
                 Contact Us<CircleArrowRight size={19} className="ml-2 mt-[2px] "  />
             
                 </Link> 
