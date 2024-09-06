@@ -7,6 +7,8 @@ import Integration1 from "../assets/Integration1.png"
 import Integration2 from "../assets/Integration2.png"
 import Integration3 from "../assets/Integration3.png"
 import { CircleArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+
 
 const Integration=()=> {
     return (
@@ -14,7 +16,7 @@ const Integration=()=> {
         
         <div className="bg-[#F7EFE5] py-12">
   <div className="max-w-[1400px] mx-auto px-4 ">
-  <div className=' justify-between text-justify lg:h-[200px]  lg:flex lg:flex-row flex-col'>
+  <div className=' border justify-between text-justify lg:h-[200px]  lg:flex lg:flex-row flex-col'>
                <div className=''>
                 <h1 className='text-4xl  lg:text-6xl  text-[#041558]  '><span className="  text-xs  text-neutral-500 font-light pl-1">CONNECTED CAPABILITIES <br /></span  > Streamlined Integration </h1>
                 </div> 
@@ -24,7 +26,7 @@ const Integration=()=> {
                 </p>
                 </div> 
             </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2  gap-8 md:mt-6 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2  gap-8 md:mt-6 lg:mt-1 ">
       {/* Card 1 */}
       <div className="bg-white p-6  rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <div className="flex items-top">
@@ -128,7 +130,7 @@ const Integration=()=> {
       </div>
     </div>
 
-    {/* Arrows for navigation */}
+    
     
   </div>
 </div>
@@ -157,10 +159,10 @@ const Integration=()=> {
         Guiding your journey with a passion for excellence, we're here to fuel your future with top-notch solutions that help you succeed and thrive every step of the way.
       </p>
       
-      <a href="#" className=" mt-5 flex items-center text-sm font-medium text-[#162460]">
+      <Link to="/contact" className="inline-flex mb-4 mt-5 flex items-center text-sm font-medium text-[#162460]">
         Get Started
         <CircleArrowRight size={20} className="ml-2" />
-      </a>
+      </Link>
     </div>
     
     {/* Right Section: Image */}
@@ -168,7 +170,7 @@ const Integration=()=> {
       <img 
         src={Integration3}
         alt="Reporting Overview" 
-        className="rounded-lg  w-full py-5 h-auto object-cover"
+        className="  rounded-lg shadow-lg w-full h-auto object-cover"
       />
     </div>
   </div>
