@@ -210,7 +210,7 @@ const ContactUs = () => {
                 <div className="">
                   <button
                     type="submit"
-                    className="flex md:w-auto py-3 px-6 bg-black text-white hover:bg-gray-800 transition"
+                    className="flex mt-2 rounded-md hover:bg-gray-800 md:w-auto py-3 px-6 bg-black text-white hover:bg-gray-800 transition"
                   >
                     Submit<CircleArrowRight size={19} className="ml-2 mt-[2px]" />
                   </button>
