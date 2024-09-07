@@ -7,6 +7,7 @@ import member3 from "../assets/member3.png";
 import member4 from "../assets/member4.png";
 import innovation from "../assets/innovation.png";
 import { CircleArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom';
 
 
 function Aboutus() {
@@ -62,8 +63,10 @@ expectations. </p>
             Our vision extends beyond mere software it encompasses a holistic approach to
             enabling growth, driving sustainable success.
             </li>
-            <button className="  flex   py-[1rem]  mt-5    ">
-                Get Started<CircleArrowRight size={19} className="ml-2 mt-[2px] "  /></button>
+            <Link to="/contact"
+            className="  flex   py-[1rem]  mt-5    ">
+                Get Started<CircleArrowRight size={19} className="ml-2 mt-[2px] "  />
+                </Link> 
             </ul>
 
             
