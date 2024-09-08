@@ -38,7 +38,7 @@ const Pfeatures=()=> {
     return (
       <div className="my-20 grid grid-cols-1 lg:grid-cols-7 ">
       <div className="col-span-1 lg:col-span-4 justify-between bg-[#F7EFE5] p-6 lg:p-16">
-        <div className="mt-10 flex flex-nowrap   justify-between gap-2 lg:max-w-[80%] ">
+        <div className="mt-10 font-playfair flex flex-nowrap   justify-between gap-2 lg:max-w-[80%] ">
           <button onClick={() => handleImg(1)} 
             
            className={`py-4 px-6 text-sm font-light rounded-md
@@ -62,7 +62,7 @@ const Pfeatures=()=> {
 
         </div>
     
-        <ul className="flex flex-col lg:h-[200px] justify-center p-5 lg:p-6 mt-10">
+        <ul className=" font-lora flex flex-col lg:h-[200px] justify-center p-5 lg:p-6 mt-10">
           {Li.map((item, index) => (
             <li className="flex mb-2 text-md text-justify" key={index}>
               <img className="pr-2" src={icon} alt="" /> {item.text}
@@ -71,14 +71,14 @@ const Pfeatures=()=> {
         </ul>
     
         <Link to="/contact"
-        className="inline-flex flex mt-5 py-4 px-6 hover:bg-[#041558] hover:text-white rounded-md bg-transparent">
+        className=" inline-flex flex mt-5 py-4 px-6 hover:bg-[#041558] hover:text-white rounded-md bg-transparent">
           Learn More
           <CircleArrowRight size={20} className="ml-2" />
           </Link> 
       </div>
     
       <div className="col-span-1 lg:col-span-3 w-full bg-[#F3E2D3] flex justify-center items-center">
-        <img className=" rounded-lg shadow-lg w-full h-auto object-cover" src={img} alt="package" />
+        <img className=" rounded-lg  w-full h-auto object-cover" src={img} alt="package" />
       </div>
     </div>
     
