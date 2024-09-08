@@ -58,7 +58,7 @@ const ContactUs = () => {
   const ThankYouMessage = () => (
     <div className="flex items-center justify-center ">
       <div className="text-center">
-        <h2 className="text-3xl font-bold text-blue-900 mb-4">Thank You for Connecting With Us!</h2>
+        <h2 className=" font-playfair text-3xl font-bold text-blue-900 mb-4">Thank You for Connecting With Us!</h2>
         <p className="text-xl text-neutral-700">We appreciate your interest and will get back to you shortly.</p>
       </div>
     </div>
@@ -70,12 +70,12 @@ const ContactUs = () => {
         {/* Title and Description */}
         <div className="text-left lg:flex md:justify-between mb-12">
           <div>
-            <p className="text-xm uppercase text-neutral-500 font-light">Contact Us</p>
-            <h1 className="text-4xl font-bold text-blue-900 mt-2">
+            <p className=" font-playfair font-semibold text-xm uppercase text-neutral-500 font-light">Contact Us</p>
+            <h1 className="font-playfair  text-4xl font-bold text-blue-900 mt-2">
               Efficiency Starts With PACAM
             </h1>
           </div>
-          <p className="py-2 md:mt-0 text-neutral-500 font-light max-w-md">
+          <p className=" font-lora py-2 md:mt-0 text-neutral-500 font-light max-w-md">
             Just fill in the details below, and our friendly experts will reach out to you shortly. We're excited to help!
           </p>
         </div>
@@ -210,7 +210,8 @@ const ContactUs = () => {
                 <div className="">
                   <button
                     type="submit"
-                    className="flex mt-2 rounded-md hover:bg-gray-800 md:w-auto py-3 px-6 bg-black text-white hover:bg-gray-800 transition"
+                    className="flex 
+                     md:w-auto py-3 px-6 bg-black text-white hover:bg-gray-800 transition"
                   >
                     Submit<CircleArrowRight size={19} className="ml-2 mt-[2px]" />
                   </button>
