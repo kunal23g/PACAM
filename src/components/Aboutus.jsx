@@ -55,12 +55,12 @@ function Aboutus() {
             <div className='md:grid grid-cols-2  p-4 md:p-5  lg:px-[50px]'>
                 <div className=" pl-3 col-span-1  flex flex-col ">
                     <h1 className=' pt-2  text-3xl border-b pb-5 font-playfair border-black mb-7 font-bold'>Who we Are</h1>
-                    <p className='  text-md w-[80%]   text-[#4F4F4F] font-light font-lora ' >  We're on a mission to revolutionize the way business ooperatoe in teh digital landscape
+                    <p className='  text-sm w-[80%]   text-[#4F4F4F] font-light font-lora ' >  We're on a mission to revolutionize the way business ooperatoe in teh digital landscape
                     </p>
                 </div>
                 <div className=" pl-3  col-span-1  flex flex-col ">
                     <h1 className=' pt-2  text-bottom text-3xl border-b pb-5 border-black mb-7 font-bold font-playfair '>Founded 2014</h1>
-                    <p className='text-md text-justify pr-5  text-[#4F4F4F] font-light font-lora ' > 
+                    <p className='text-sm text-justify pr-5  text-[#4F4F4F] font-light font-lora ' > 
                     With years of collective experience in software development and a deep
 understanding of industry-specific challenges, we've crafted a suite of
 tools that streamline operations, enhance productivity. <br />We believe in building lasting partnerships with our clients, understanding
