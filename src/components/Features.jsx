@@ -16,8 +16,7 @@ import api1 from "../assets/Api1.png"
 import api2 from "../assets/Api2.png"
 import api3 from "../assets/Api3.png"
 import { CircleArrowRight } from 'lucide-react'
-import  { useState } from 'react';
-import ScrollTrigger from 'react-scroll-trigger';
+import  { useState,useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 
@@ -43,10 +42,31 @@ const Features=({optimized})=> {
         }
     }
     const [isVisible, setIsVisible] = useState(false);
-    
-      const onEnterViewport = () => {
-        setIsVisible(true);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.1
       }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
 
     
     
@@ -122,47 +142,45 @@ const Features=({optimized})=> {
 
          {/* Optimized Cloud solutions */}
         <>
-        <ScrollTrigger onEnter={onEnterViewport}>
-      <div className="p-10 mb-20 lg:p-[65px] my-20 gap-5 lg:gap-0 md:grid grid-cols-2">
-        <div className="col-span-1 flex flex-col justify-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isVisible ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.5 }}
-          >
-            <h6 className="text-xm font-medium text-gray-600 mb-2 font-playfair">
-              CLOUD-DRIVEN SOLUTIONS
-            </h6>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isVisible ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          >
-            <h1 className="text-3xl text-dark-blue mb-4 font-playfair font-medium">
-              Optimized Cloud Solutions
-            </h1>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isVisible ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 1.1 }}
-          >
-            <h1 className='flex mb-4 text-md lg:w-[80%] font-lora text-gray-600 text-justify pr-3'>
-              Cut development costs and boost service quality with global cloud access, offering top-notch security. Enjoy seamless CMS access from anywhere, effortlessly view and share video logs without worrying about hardware limitations.
-            </h1>
-          </motion.div>
-        </div>
-        <motion.div 
-          className="col-span-1"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={isVisible ? { opacity: 1, scale: 1 } : {}}
-          transition={{ duration: 0.8, delay: 1.4 }}
+        <div ref={ref} className="p-10 mb-20 lg:p-[65px] my-20 gap-5 lg:gap-0 md:grid grid-cols-2">
+      <div className="col-span-1 flex flex-col justify-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <img className='w-full h-full object-cover' src={optimize} alt="package" />
+          <h6 className="text-xm font-medium text-gray-600 mb-2 font-playfair">
+            CLOUD-DRIVEN SOLUTIONS
+          </h6>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.8 }}
+        >
+          <h1 className="text-3xl text-dark-blue mb-4 font-playfair font-medium">
+            Optimized Cloud Solutions
+          </h1>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 1.1 }}
+        >
+          <h1 className='flex mb-4 text-md lg:w-[80%] font-lora text-gray-600 text-justify pr-3'>
+            Cut development costs and boost service quality with global cloud access, offering top-notch security. Enjoy seamless CMS access from anywhere, effortlessly view and share video logs without worrying about hardware limitations.
+          </h1>
         </motion.div>
       </div>
-    </ScrollTrigger>
+      <motion.div 
+        className="col-span-1"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={isVisible ? { opacity: 1, scale: 1 } : {}}
+        transition={{ duration: 0.8, delay: 1.4 }}
+      >
+        <img className='w-full h-full object-cover' src={optimize} alt="package" />
+      </motion.div>
+    </div>
         </>
 
 {/* Management */}
