@@ -143,27 +143,42 @@ const Features=({optimized})=> {
         <>
         <div ref={ref} className="p-10 mb-20 lg:p-[65px] my-20 gap-5 lg:gap-0 md:grid grid-cols-2">
       <div className="col-span-1 flex flex-col justify-center">
-        <div className={`transition-all duration-800 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
           <h6 className="text-xm font-medium text-gray-600 mb-2 font-playfair">
             CLOUD-DRIVEN SOLUTIONS
           </h6>
-        </div>
-        <div className={`transition-all duration-800 delay-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.8 }}
+        >
           <h1 className="text-3xl text-dark-blue mb-4 font-playfair font-medium">
             Optimized Cloud Solutions
           </h1>
-        </div>
-        <div className={`transition-all duration-800 delay-1100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 1.1 }}
+        >
           <h1 className='flex mb-4 text-md lg:w-[80%] font-lora text-gray-600 text-justify pr-3'>
             Cut development costs and boost service quality with global cloud access, offering top-notch security. Enjoy seamless CMS access from anywhere, effortlessly view and share video logs without worrying about hardware limitations.
           </h1>
-        </div>
+        </motion.div>
       </div>
-      <div 
-        className={`col-span-1 transition-all duration-800 delay-1400 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
+      <motion.div 
+        className="col-span-1"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={isVisible ? { opacity: 1, scale: 1 } : {}}
+        transition={{ duration: 0.8, delay: 1.4 }}
       >
         <img className='w-full h-full object-cover' src={optimize} alt="package" />
-      </div>
+      </motion.div>
     </div>
         </>
 
