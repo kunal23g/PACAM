@@ -16,7 +16,7 @@ const Footer = () => {
       <>
      
         <div className=" lg:pl-10 bg-black bg-opacity-[94%]	">
-            <div className=' text-white py-20 grid md:grid-cols-2  text-white'>
+            <div className=' text-white py-10 grid md:grid-cols-2  text-white '>
                 <div className=" lg:col-span-1 px-5 ">
                     <Link to="/">
                       <img className="h-10 w-auto mb-5" src={logo2} alt="Logo" />
@@ -44,10 +44,11 @@ const Footer = () => {
                         <ul>
                           {
                             ["Analytics","Marketing","Commerce","Insights"].map((item)=>
-                            (
+                            ( <Link to="/contact">
                               <li key={item} className='py-2 text-xs hover:underline hover:cursor-pointer' >
                                 {item}
                               </li>
+                              </Link>
                             ))
                           }
                             
@@ -56,10 +57,18 @@ const Footer = () => {
                     <div>
                         <h6 className='font-medium'>Support</h6>
                         <ul>
-                            <li className='py-2 text-xs hover:underline hover:cursor-pointer'>Pricing</li>
-                            <li className='py-2 text-xs hover:underline hover:cursor-pointer'>Documentation</li>
-                            <li className='py-2 text-xs hover:underline hover:cursor-pointer'>Guides</li>
-                            <li className='py-2 text-xs hover:underline hover:cursor-pointer'>API Status</li>
+                            {
+                              ["Pricing","Documentation","Guides","API Status"].map((item)=>
+                              ( <Link to="/contact">
+                              
+                                <li key={item}
+                                  className='py-2 text-xs hover:underline hover:cursor-pointer'>
+                                {item}
+
+                                </li>
+                                </Link>
+                              ))
+                            }
                         </ul>
                     </div>
                     <div>
@@ -67,11 +76,14 @@ const Footer = () => {
                         <ul>
                             {
                               ["About","Blog","Jobs","Press","Careers"].map((item)=>
-                              (
-                                <li key={item} className='py-2 text-xs hover:underline hover:cursor-pointer'>
+                              ( <Link to="/contact">
+                              
+                                <li key={item}
+                                  className='py-2 text-xs hover:underline hover:cursor-pointer'>
                                 {item}
 
                                 </li>
+                                </Link>
                               ))
                             }
                         </ul>
@@ -82,9 +94,9 @@ const Footer = () => {
             
             <div className=" flex md:flex-row flex-col justify-between mx-3 pt-4 border-t  bg-opacity-95 border-gray-700">
                 <div>
-                  <p className="text-gray-400 mb-4 lg:px-5">© 2023 Pacam. All rights reserved.</p>
+                  <p className="text-gray-400 mb-4 lg:px-3">© 2023 Pacam. All rights reserved.</p>
                   </div>
-                  <div className="flex space-x-4 p-4 md:pr-5">
+                  <div className="flex space-x-4 pr-5">
   <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
     <FaYoutubeSquare className='w-5 h-5' />
   </a>
