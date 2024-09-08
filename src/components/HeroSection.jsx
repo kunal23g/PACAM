@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     
-    <div className="flex flex-col items-center bg-[#F9F3EE]   p-5 md:p-10 lg:p-20 ">
+    <div className="flex flex-col font-playfair font-medium  items-center bg-[#F9F3EE]   p-5 md:p-10 lg:p-20 ">
       <h1 className="mt-18 text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         Let's Make
         <span className="text-[#041558]  bg-clip-text">
