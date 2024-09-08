@@ -46,7 +46,7 @@ import pb3 from "../assets/Problems3.png"
     </div>
     <h1 className="pl-3 font-playfair font-bold text-indigo-950 text-2xl mb-5">Discover Video Library</h1>
 
-    <h1 className="pl-3 font-lora pr-[50px] mb-20 lg:text-base text-gray-600 text-justify">
+    <h1 className="pl-3 font-lora text-xm pr-[50px] mb-20  text-gray-600 text-justify">
         Video Retrieval in Just 30 Seconds! No Need to Wait on Other Departments, Quickly Handle Claims with Ease!
     </h1>
 
