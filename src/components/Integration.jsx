@@ -15,13 +15,13 @@ const Integration=()=> {
         <>
         
         <div className="bg-[#F7EFE5] py-12">
-  <div className="max-w-[1400px] mx-auto px-4 ">
+  <div className=" font-playfair max-w-[1400px] mx-auto px-4 ">
   <div className=' border justify-between text-justify lg:h-[200px]  lg:flex lg:flex-row flex-col'>
                <div className=''>
-                <h1 className='text-4xl  lg:text-6xl  text-[#041558]  '><span className="  text-xs  text-neutral-500 font-light pl-1">CONNECTED CAPABILITIES <br /></span  > Streamlined Integration </h1>
+                <h1 className='text-4xl font-bold lg:text-6xl  text-[#041558]  '><span className="  text-sm font-bold   text-neutral-500  pl-1">CONNECTED CAPABILITIES <br /></span  > Streamlined Integration </h1>
                 </div> 
                <div className='text-center'>
-                <p className="  p-1 my-4 lg:my-0  lg:p-12 text-xm  lg:text-lg   text-[#4F4F4F] lg:max-w-2xl text-center text-justify  ">
+                <p className=" font-lora p-1 my-4 lg:my-0  lg:p-12 text-xm  lg:text-lg   text-[#4F4F4F] lg:max-w-2xl text-center text-justify  ">
                 Streamline your workflow with Pacam’s powerful integration capabilities and your favorite tools    
                 </p>
                 </div> 
@@ -33,12 +33,10 @@ const Integration=()=> {
           <img src={Buy} alt="Buy Solution Icon" className="w-8 mr-1 h-8" />
           <div className="ml-4">
             <h3 className="text-xl  font-semibold">Buy Solution</h3>
-            <p className="mt-2 lg:max-w-[70%] text-gray-600 text-justify">
+            <p className="font-lora mt-2 lg:max-w-[70%] text-gray-600 text-justify">
               Innovative API for Hassle-Free Buying, Seamless Tracking, and Optimized E-commerce Logistics.
             </p>
-            <a href="#" className="text-blue-600 mt-4 inline-flex items-center space-x-2">
-              <span>Read More</span>
-            </a>
+            
           </div>
         </div>
       </div>
@@ -49,13 +47,10 @@ const Integration=()=> {
           <img src={SignUp} alt="Sign Up Icon" className="w-8 mr-1 h-8" />
           <div className="ml-4 ">
             <h3 className="text-xl font-semibold">Sign Up</h3>
-            <p className="mt-2 lg:max-w-[70%]  text-gray-600">
+            <p className="font-lora mt-2 lg:max-w-[70%]  text-gray-600">
               Enhance engagement, improve security, and streamline both the tracking of goods and the purchasing process.
             </p>
-            <a href="#" className="text-blue-600 mt-4 inline-flex items-center space-x-2">
-              <span>Read More</span>
-              
-            </a>
+            
           </div>
         </div>
       </div>
@@ -66,13 +61,10 @@ const Integration=()=> {
           <img src={Query} alt="Query Icon" className="w-8 mr-1 h-8" />
           <div className="ml-4">
             <h3 className="text-xl font-semibold">Query</h3>
-            <p className="mt-2 lg:max-w-[70%] text-gray-600">
+            <p className="font-lora mt-2 lg:max-w-[70%] text-gray-600">
               Enhance e-commerce experience by providing seamless integration and easy buying solutions.
             </p>
-            <a href="#" className="text-blue-600 mt-4 inline-flex items-center space-x-2">
-              <span>Read More</span>
-              
-            </a>
+            
           </div>
         </div>
       </div>
@@ -83,13 +75,10 @@ const Integration=()=> {
           <img src={Expose} alt="Expose APIs Icon" className="w-8 mr-1 h-8" />
           <div className="ml-4">
             <h3 className="text-xl font-semibold">Expose API’s</h3>
-            <p className="mt-2 lg:max-w-[70%] text-gray-600">
+            <p className= " font-lora mt-2 lg:max-w-[70%] text-gray-600">
               Accessing and consuming data and services from thousands of independent sources.
             </p>
-            <a href="#" className="text-blue-600 mt-4 inline-flex items-center space-x-2">
-              <span>Read More</span>
-              
-            </a>
+           
           </div>
         </div>
       </div>
@@ -100,9 +89,9 @@ const Integration=()=> {
 {/* SECTION2  */}
 
 <div className="bg-[#F1F6FF] py-12">
-  <div className="max-w-[1460px] mx-auto  px-4 sm:px-6 lg:px-8">
-    <h3 className="text-sm  text-gray-500 mb-4">TESTIMONIAL</h3>
-    <h2 className="text-4xl  text-gray-900 mb-8">Customer Review</h2>
+  <div className="max-w-[1460px] mx-auto font-playfair  px-4 sm:px-6 lg:px-8">
+    <h3 className="text-sm font-semibold text-gray-500 mb-1">TESTIMONIAL</h3>
+    <h2 className="text-4xl  font-bold text-gray-900 mb-8">Customer Review</h2>
 
     <div className="flex flex-col md:flex-row md:items-center gap-8">
       {/* Left Section: Inside Overview as an image */}
@@ -116,8 +105,8 @@ const Integration=()=> {
 
       {/* Right Section: Testimonial Content */}
       <div className="flex-1  lg:p-10  space-y-4">
-        <h3 className="text-2xl  text-gray-900">Master the Art of Marketing Analytics</h3>
-        <p className="text-justify text-gray-600">
+        <h3 className="text-3xl font-bold text-gray-900">Master the Art of Marketing Analytics</h3>
+        <p className="text-justify text-gray-600 font-lora">
           Unlock the power of data with a fun and friendly guide to analytics! Dive into the world of data visualisation and learn how to turn numbers into actionable insights that can transform your decision-making. Let’s make data your best ally on this exciting journey!
         </p>
         <div className="py-3 flex items-center mt-6">
@@ -140,22 +129,22 @@ const Integration=()=> {
   <div className="   lg:px-8 flex flex-col lg:flex-row mx-5  lg:gap-8">
     
     {/* Left Section: Text content */}
-    <div className="lg:mt-8   ">
-      <h4 className="text-sm  mb-2 text-gray-600">READY TO TAKE THE NEXT STEP?</h4>
-      <h2 className="text-4xl mb-5 text-gray-900 leading-tight ">Hop on board and discover the difference today!</h2>
+    <div className="lg:mt-8 font-playfair  ">
+      <h4 className="text-sm font-semibold mb-2 text-gray-600">READY TO TAKE THE NEXT STEP?</h4>
+      <h2 className="text-4xl font-bold mb-5 text-gray-900 leading-tight ">Hop on board and discover the difference today!</h2>
       
       <div className="flex  mb-3 sm:flex-row      ">
         <div className='border-y   border-gray-600 pr-14 py-5'>
-          <h3 className=" text-4xl  text-[#162460]">400+</h3>
-          <p className="text-sm text-gray-600">Partners in Success!</p>
+          <h3 className=" text-4xl font-semibold text-[#162460]">400+</h3>
+          <p className="text-sm font-semibold text-gray-600">Partners in Success!</p>
         </div>
-        <div className='border-t border-y border-l  border-gray-600 pl-14 py-5'>
+        <div className='border-t font-semibold border-y border-l  border-gray-600 pl-14 py-5'>
           <h3 className="text-4xl  text-[#162460]">1000+</h3>
           <p className="text-sm text-gray-600">Flourished with Our Help!</p>
         </div>
       </div>
       
-      <p className="text-justify max-w-[80%] text-gray-600">
+      <p className=" font-lora text-justify max-w-[80%] text-gray-600">
         Guiding your journey with a passion for excellence, we're here to fuel your future with top-notch solutions that help you succeed and thrive every step of the way.
       </p>
       
