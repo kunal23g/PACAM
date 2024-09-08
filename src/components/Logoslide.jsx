@@ -14,7 +14,7 @@ const Logoslide = () => {
   return (
     <div className="mt-12 text-center">
       <div className="mb-12">
-        <h1 className="text-2xl font-bold">Our Technology Partner</h1>
+        <h1 className="text-2xl font-playfair  font-bold">Our Technology Partner</h1>
       </div>
 
       <div>
