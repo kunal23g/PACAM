@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from "react"
 import card1 from "../assets/featureCard1.png"
 import recording from "../assets/recordingFeature.png"
 import autoRecord from "../assets/autoRecord.png"
@@ -10,17 +9,19 @@ import { Link, NavLink } from "react-router-dom";
 
 import Email1 from "../assets/Email1.png"
 import Email2 from "../assets/Email2.png"
-import optimized from "../assets/optimized.png"
+import optimize from "../assets/optimized.png"
 import management from "../assets/management.png"
 import inspection from "../assets/inspection.png"
 import api1 from "../assets/Api1.png"
 import api2 from "../assets/Api2.png"
 import api3 from "../assets/Api3.png"
 import { CircleArrowRight } from 'lucide-react'
+import  { useState } from 'react';
+import ScrollTrigger from 'react-scroll-trigger';
+import { motion } from 'framer-motion';
 
 
-
-const Features=()=> {
+const Features=({optimized})=> {
     const [activeButton, setActiveButton] = useState(1)
     const [img, setImg] = useState(api1);
     const handleImg=(index)=>{
@@ -41,8 +42,15 @@ const Features=()=> {
             
         }
     }
+    const [isVisible, setIsVisible] = useState(false);
+    
+      const onEnterViewport = () => {
+        setIsVisible(true);
+      }
 
-
+    
+    
+    
     return (
         <>
         {/* HEROSECTION1  */}
@@ -113,23 +121,49 @@ const Features=()=> {
 
 
          {/* Optimized Cloud solutions */}
-        <div className=" p-10  mb-20 lg:p-[65px] my-20 gap-5 lg:gap-0   md:grid grid-cols-2 ">
-
-        <div className="  col-span-1  flex flex-col justify-center ">
-        <h6 className="text-xs text-gray-600 mb-2 ">CLOUD-DRIVEN SOLUTIONS</h6>
-        <h1 className="text-3xl  text-dark-blue mb-4 ">Optimized Cloud Solutions</h1>
-
-        <h1 className='flex mb-4 text-md lg:w-[80%] text-gray-600 text-justify pr-3'>Cut development costs and boost service quality with global cloud access, offering top-notch security. Enjoy seamless CMS access from anywhere, effortlessly view and share video logs without worrying about hardware limitations. </h1>
-
-            
-         </div>
-        <div className="   col-span-1">
-            <img className='w-full h-full object-cover' src={optimized} alt="package" />
+        <>
+        <ScrollTrigger onEnter={onEnterViewport}>
+      <div className="p-10 mb-20 lg:p-[65px] my-20 gap-5 lg:gap-0 md:grid grid-cols-2">
+        <div className="col-span-1 flex flex-col justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isVisible ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+            <h6 className="text-xm font-medium text-gray-600 mb-2 font-playfair">
+              CLOUD-DRIVEN SOLUTIONS
+            </h6>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isVisible ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.8 }}
+          >
+            <h1 className="text-3xl text-dark-blue mb-4 font-playfair font-medium">
+              Optimized Cloud Solutions
+            </h1>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isVisible ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 1.1 }}
+          >
+            <h1 className='flex mb-4 text-md lg:w-[80%] font-lora text-gray-600 text-justify pr-3'>
+              Cut development costs and boost service quality with global cloud access, offering top-notch security. Enjoy seamless CMS access from anywhere, effortlessly view and share video logs without worrying about hardware limitations.
+            </h1>
+          </motion.div>
         </div>
-
-
-
-        </div>
+        <motion.div 
+          className="col-span-1"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={isVisible ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.8, delay: 1.4 }}
+        >
+          <img className='w-full h-full object-cover' src={optimize} alt="package" />
+        </motion.div>
+      </div>
+    </ScrollTrigger>
+        </>
 
 {/* Management */}
 
@@ -177,9 +211,9 @@ const Features=()=> {
 <div className='grid lg:grid-cols-2 md:mx-8 p-10 gap-5 '>
     <div className='p-5 col-span-1 flex flex-col bg-[#F3F8FF]'>
     <h1 className="  text-xs uppercase text-neutral-500 font-light pl-1">Message broadcasting</h1>
-    <h1 className='lg:h-[50px] text-2xl pl-1'>Efffortless Bulk Video Log Distribution</h1>
+    <h1 className=' lg:h-[50px] text-2xl pl-1'>Efffortless Bulk Video Log Distribution</h1>
     <p className="  text-xm mt-4 lg:h-[100px] text-justify text-neutral-500 font-light pl-1">After uploading order details to the CMS, you can use the bulk messaging feature to send video logs to customers globally. You can send messages via SMS or email and track their performance directly within the CMS</p>
-    <img className='mt-10 md:mt-5 mb-9' src={Email1} alt="" />
+    <img className='mt-10  md:mt-5 mb-9' src={Email1} alt="" />
      </div>
     <div className='p-5 col-span-1 flex flex-col bg-[#F3F8FF]'>
     <h1 className="  text-xs  text-neutral-500 font-light pl-1">VIDEO MEMO</h1>
@@ -303,7 +337,7 @@ const Features=()=> {
 
         </div>
         <div className='  md:justify-center '>
-         <Link to="/contact"  className=" flex rounded-md justify-center py-[1rem] px-[1rem] mt-5    text-white bg-black">
+         <Link to="/contact"  className=" rounded-md flex  justify-center py-[1rem] px-[1rem] mt-5    text-white bg-black">
                 Contact Us<CircleArrowRight size={19} className="ml-2 mt-[2px] "  />
             
                 </Link> 
