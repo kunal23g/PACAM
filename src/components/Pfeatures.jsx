@@ -64,7 +64,7 @@ const Pfeatures=()=> {
     
         <ul className=" font-lora flex flex-col lg:h-[200px] justify-center p-5 lg:p-6 mt-10">
           {Li.map((item, index) => (
-            <li className="flex mb-2 text-md text-justify" key={index}>
+            <li className="flex mb-2 text-xm lg:text-lg text-justify" key={index}>
               <img className="pr-2" src={icon} alt="" /> {item.text}
             </li>
           ))}
