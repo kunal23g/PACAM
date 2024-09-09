@@ -47,7 +47,7 @@ function Aboutus() {
         <div className='bg-[#F9F3EE] mb-20'>
         <div className='bg-[#F9F3EE] font-playfair font-medium flex flex-col p-5 md:p-10 lg:px-[70px]'>
             <div className='justify-between text-justify  lg:flex '>
-                <h1 className=' text-5xl lg:text-6xl  text-[#041558] font-bold '><span className="  text-xl  text-neutral-500  pl-1">ABOUT US <br /></span  > Our Story </h1>
+                <h1 className=' text-5xl lg:text-6xl  text-[#041558] font-bold '><span className="  text-sm  text-neutral-500  pl-1">ABOUT US <br /></span  > Our Story </h1>
                 <p className=" my-4 p-1 lg:my-0  lg:p-9 text-xm font-lora lg:text-lg   text-[#4F4F4F] max-w-2xl  ">At Pacam, our Recorder program is designed to help you start recording immediately, reducing cost losses by resolving claims, and enhancing your brand value and customer satisfaction.</p>
             </div>
             <div className='  '><img className='mt-2 w-full h-full object-cover' src={aboutimg} alt="" /></div>
