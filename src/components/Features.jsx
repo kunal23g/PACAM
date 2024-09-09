@@ -155,7 +155,7 @@ const Features=({optimized,management})=> {
 <div className=' mb-20 lg:mx-16'>
         <div className='bg-[#F3E2D3]   lg:flex flex-col p-5 md:p-10 lg:px-[70px]'>
             <div className='justify-between lg:flex-row flex-col  flex '>
-                <h1 className=' text-3xl lg:text-4xl  text-[#041558] font-playfair font-bold '><span className="  text-xl  font-playfair text-neutral-500 font-light pl-1">RECORDING STUDIO SUITE <br /></span  > Instantly Record Video Logs <br />with a Simple Connection </h1>
+                <h1 className=' text-3xl lg:text-4xl  text-[#041558] font-playfair font-bold '><span className="  text-sm  font-playfair text-neutral-500 font-light pl-1">RECORDING STUDIO SUITE <br /></span  > Instantly Record Video Logs <br />with a Simple Connection </h1>
 
                 
                 <p className=" lg:px-5 py-4 lg:p-9 text-xm  lg:text-lg text-[15px] font-lora  text-[#4F4F4F] max-w-2xl  lg:text-justify">Recording a video log for each order simplifies its retrieval whenever needed. Video logs can serve various purposes, including as evidence for customer claims, marketing materials, and logistical records.</p>
@@ -255,7 +255,7 @@ const Features=({optimized,management})=> {
  <div className='bg-[#F9F3EE] mb-20 p-1 lg:max-w-[1380px] mx-auto'>
         <div className='bg-[#F9F3EE]   p-10 lg:flex flex-col '>
             <div className='justify-between mb-5  lg:flex flex-col lg:flex-row'>
-                <h1 className='lg:p-4  text-4xl  text-[#041558] font-playfair font-bold '><span className="  text-xl  text-neutral-500 font-playfair font-playfair font-light pl-1">INSPECTION MODE <br /></span  > Accurate Orders, <br />Every Shipment
+                <h1 className='lg:p-4  text-4xl  text-[#041558] font-playfair font-bold '><span className="  text-sm  text-neutral-500 font-playfair font-playfair font-light pl-1">INSPECTION MODE <br /></span  > Accurate Orders, <br />Every Shipment
                 </h1>
                 <p className="font-lora lg:px-5 py-4 lg:p-9 text-xm  lg:text-lg text-[15px]  text-[#4F4F4F] max-w-2xl  lg:text-justify ">Pacam's inspection mode guarantees your shipments are accurate, even without integrated logistics. It verifies products and quantities against orders, alerting you to any mispackaged items and preventing mistakes before they happen.</p>
             </div>
