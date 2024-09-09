@@ -20,7 +20,7 @@ const Cards=()=>{
   <div className="flex flex-col  p-4 shadow-xl  my-3 hover:scale-105 duration-500 bg-[#F7EFE5]">
     <h1 className="text-3xl font-medium lg:text-4xl mb-5">See it Clearly, <br />Video Evidence</h1>
 
-    <h1 className="font-lora mb-20 lg:text-base text-gray-600 text-justify md:h-[80px]">
+    <h1 className=" text-xm  lg:text-lg font-lora mb-20  text-gray-600 text-justify md:h-[80px]">
       95% of compensaton costs drop because the video log can be used as evidence to resolve claims 
     </h1>
 
@@ -32,7 +32,7 @@ const Cards=()=>{
   <div className="flex flex-col  p-4 shadow-xl  my-3 hover:scale-105 duration-500 bg-[#F7EFE5]">
     <h1 className="text-3xl font-medium lg:text-4xl mb-5">Maximize <br />Team Efficiency </h1>
 
-    <h1 className="font-lora mb-20 break-words text-base text-gray-600 text-justify md:h-[80px]">
+    <h1 className="font-lora mb-20 break-words text-xm  lg:text-lg text-gray-600 text-justify md:h-[80px]">
       Master operational effectiveness by strategically redeploying staff members previously assigned to mis-shipment issues.
     </h1>
 
@@ -44,7 +44,7 @@ const Cards=()=>{
   <div className="flex flex-col  p-4 shadow-xl  my-3 hover:scale-105 duration-500 bg-[#F7EFE5]">
     <h1 className="mb-5 font-medium text-3xl lg:text-4xl break-words">Uphold <br />Accountability</h1>
 
-    <h1 className="font-lora mb-20 text-base text-gray-600 text-justify md:h-[80px]">
+    <h1 className="font-lora mb-20 text-xm  lg:text-lg text-gray-600 text-justify md:h-[80px]">
       Empowering our team with personal accounts helps them master the art of careful packing,ensuring every order is perfect
     </h1>
 
