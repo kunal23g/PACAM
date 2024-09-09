@@ -30,7 +30,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div ref={ref} className=" border border-black p-2 max-w-[1240px] mx-auto my-3 md:grid grid-cols-2">
+    <div ref={ref} className="  p-2 max-w-[1240px] mx-auto my-3 md:grid grid-cols-2">
       
       {/* Text Content */}
       <div className="font-playfair col-span-1 p-3 lg:w-[80%] flex flex-col justify-center">
