@@ -193,7 +193,7 @@ const Features=({optimized,management})=> {
             animate={isVisibleCloudSolutions ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 1.1 }}
           >
-            <h1 className='flex mb-4 text-md lg:w-[80%] font-lora text-gray-600 text-justify pr-3'>
+            <h1 className='flex mb-4 text-xm  lg:text-lg lg:w-[80%] font-lora text-gray-600 text-justify pr-3'>
               Cut development costs and boost service quality with global cloud access, offering top-notch security. Enjoy seamless CMS access from anywhere, effortlessly view and share video logs without worrying about hardware limitations.
             </h1>
           </m.div>
@@ -215,7 +215,7 @@ const Features=({optimized,management})=> {
     className="p-2 md:p-6 col-span-2"
     initial={{ opacity: 0, scale: 0.95 }}
     animate={isVisibleManagement ? { opacity: 1, scale: 1 } : {}}
-    transition={{ duration: 0.8, delay: 1.4 }}  // Same delay pattern as in the optimized section
+    transition={{ duration: 0.8, delay: 1.2 }}  // Same delay pattern as in the optimized section
   >
     <img src={manage} alt="package" className="w-full h-full object-cover" />
   </m.div>
@@ -224,14 +224,14 @@ const Features=({optimized,management})=> {
     <m.div
       initial={{ opacity: 0, y: 20 }}
       animate={isVisibleManagement ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8, delay: 1.6 }}
+      transition={{ duration: 0.8, delay: 1.4 }}
     >
       <h6 className="text-xm font-medium text-gray-600 font-playfair mb-2">MANAGE ACCESS FOR SUB-ACCOUNTS</h6>
     </m.div>
     <m.div
       initial={{ opacity: 0, y: 20 }}
       animate={isVisibleManagement ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8, delay: 1.7 }}
+      transition={{ duration: 0.8, delay: 1.5 }}
     >
       <h1 className="text-3xl text-dark-blue font-playfair font-medium mb-6">
         Management <br />Becomes Simpler
@@ -240,10 +240,10 @@ const Features=({optimized,management})=> {
     <m.div
       initial={{ opacity: 0, y: 20 }}
       animate={isVisibleManagement ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8, delay: 1.8 }}
+      transition={{ duration: 0.8, delay: 1.6 }}
     >
       <ul className="text-justify text-[#4F4F4F] w-[80%]">
-        <li className="flex mb-2 font-lora text-md text-justify">
+        <li className="flex mb-2 font-lora text-xm  lg:text-lg text-justify">
           Admins can set up sub-accounts and assign permissions tailored to departments or roles, simplifying management. With advanced permission controls, data security is boosted as users only access features relevant to their roles.
         </li>
       </ul>
@@ -270,13 +270,13 @@ const Features=({optimized,management})=> {
     <div className='p-5 col-span-1 flex flex-col bg-[#F3F8FF]'>
     <h1 className="  text-xm uppercase text-neutral-500 font-medium font-playfair pl-1">Message broadcasting</h1>
     <h1 className=' lg:h-[50px] text-3xl font-playfair font-medium pl-1'>Efffortless Bulk Video Log Distribution</h1>
-    <p className="  text-xm mt-4 lg:h-[100px] text-justify text-neutral-500 font-light pl-1 font-lora">After uploading order details to the CMS, you can use the bulk messaging feature to send video logs to customers globally. You can send messages via SMS or email and track their performance directly within the CMS</p>
+    <p className="  text-xm  lg:text-lg mt-4 lg:h-[100px] text-justify text-neutral-500 font-light pl-1 font-lora">After uploading order details to the CMS, you can use the bulk messaging feature to send video logs to customers globally. You can send messages via SMS or email and track their performance directly within the CMS</p>
     <img className='mt-10  md:mt-5 mb-9' src={Email1} alt="" />
      </div>
     <div className='p-5 col-span-1 flex flex-col bg-[#F3F8FF]'>
     <h1 className="  text-xm  text-neutral-500 font-playfair font-medium pl-1">VIDEO MEMO</h1>
     <h1 className='lg:h-[50px] text-3xl font-playfair font-medium text-2xl pl-1'>Make Every Customer Interaction Special</h1>
-    <p className="  text-xm mt-4 text-justify lg:h-[100px] text-neutral-500 font-light font-lora pl-1">Enhance customer experience with video messages for order confirmations, review widgets, and status updates. Personalize with your logo or a pre-roll ad for extra impact.</p>
+    <p className="  text-xm  lg:text-lg mt-4 text-justify lg:h-[100px] text-neutral-500 font-light font-lora pl-1">Enhance customer experience with video messages for order confirmations, review widgets, and status updates. Personalize with your logo or a pre-roll ad for extra impact.</p>
     <img className='mt-10 md:mt-5 mb-9' src={Email2} alt="" />
      </div>
     
@@ -297,7 +297,7 @@ const Features=({optimized,management})=> {
         <div className="flex font-playfair flex-col md:flex-row flex-nowrap lg:justify-between justify-around lg:max-w-[80%] gap-1 ">
           <button
             onClick={() => handleImg(1)} 
-            className={`py-4 px-6 text-sm font-light rounded-md ${
+            className={`py-4 px-6 text-xm font-semibold rounded-md ${
               activeButton === 1 ? 'bg-[#041558] text-white' : 'hover:bg-[#041558] hover:text-white'
             }`}
           >
@@ -305,7 +305,7 @@ const Features=({optimized,management})=> {
           </button>
           <button
             onClick={() => handleImg(2)} 
-            className={`py-4 px-6 text-sm font-light rounded-md ${
+            className={`py-4 px-6 text-xm font-semibold rounded-md ${
               activeButton === 2 ? 'bg-[#041558] text-white' : 'hover:bg-[#041558] hover:text-white'
             }`}
           >
@@ -313,7 +313,7 @@ const Features=({optimized,management})=> {
           </button>
           <button
             onClick={() => handleImg(3)} 
-            className={`py-4 px-6 text-sm font-light rounded-md ${
+            className={`py-4 px-6 text-xm font-semibold rounded-md ${
               activeButton === 3 ? 'bg-[#041558] text-white' : 'hover:bg-[#041558] hover:text-white'
             }`}
           >
@@ -322,7 +322,7 @@ const Features=({optimized,management})=> {
         </div>
         <ul className="flex flex-col justify-center mt-8 lg:mt-12">
           <h1 className="text-3xl font-playfair font-medium mb-4">Seamless Integration with Your Favourite Tools</h1>
-          <p className="text-xm font-lora text-neutral-500 font-light text-justify">
+          <p className="text-xm  lg:text-lg font-lora text-neutral-500 font-light text-justify">
             Seamlessly connect to our new logistics program for effortless integration with your warehouse management systems. Record video logs without disrupting your current workflow.
           </p>
         </ul>
@@ -348,7 +348,7 @@ const Features=({optimized,management})=> {
     </div>
     <h1 className="lg:pl-3  font-playfair font-medium text-2xl mb-5">Get Started with Ready Gear</h1>
 
-    <h1 className="lg:pl-3 font-lora text-xm  mb-20  text-neutral-500 text-justify">
+    <h1 className="lg:pl-3 font-lora text-xm  lg:text-lg  mb-20  text-neutral-500 text-justify">
     Just grab a webcam, barcode scanner, and laptop. With our ready-to-use products, you can start recording video logs right away, wherever you are.
     </h1>
 
@@ -362,7 +362,7 @@ const Features=({optimized,management})=> {
     </div>
     <h1 className="lg:pl-3 font-playfair font-medium  text-2xl mb-5">Move Equipment with Ease</h1>
 
-    <h1 className="lg:pl-3 text-xm font-lora mb-20  text-neutral-500 text-justify">
+    <h1 className="lg:pl-3 text-xm  lg:text-lg font-lora mb-20  text-neutral-500 text-justify">
     The straightforward design of the equipment makes it easy to move and set up. You can easily customise your workspace to fit your needs.
     </h1>
 
@@ -376,7 +376,7 @@ const Features=({optimized,management})=> {
     </div>
     <h1 className="lg:pl-3  font-playfair font-medium text-2xl mb-5">Varieties of Communication</h1>
 
-    <h1 className="lg:pl-3 font-lora text-xm  mb-20  text-neutral-500 text-justify">
+    <h1 className="lg:pl-3 font-lora text-xm  lg:text-lg  mb-20  text-neutral-500 text-justify">
     We offer a variety of communication options to ensure top-notch service: chat, phone, email, remote support, and more.
     </h1>
 
