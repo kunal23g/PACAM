@@ -55,12 +55,12 @@ function Aboutus() {
             <div className='md:grid grid-cols-2  p-4 md:p-5  lg:px-[50px]'>
                 <div className=" pl-3 col-span-1  flex flex-col ">
                     <h1 className=' pt-2  text-3xl border-b pb-5 font-playfair border-black mb-7 font-bold'>Who we Are</h1>
-                    <p className='  text-xm w-[80%]   text-[#4F4F4F] font-light font-lora ' >  We're on a mission to revolutionize the way business ooperatoe in teh digital landscape
+                    <p className='  text-xm lg:text-lg w-[80%]   text-[#4F4F4F] font-light font-lora ' >  We're on a mission to revolutionize the way business operate in the digital landscape
                     </p>
                 </div>
                 <div className=" pl-3  col-span-1  flex flex-col ">
                     <h1 className=' pt-2  text-bottom text-3xl border-b pb-5 border-black mb-7 font-bold font-playfair '>Founded 2014</h1>
-                    <p className='text-xm text-justify pr-5  text-[#4F4F4F] font-light font-lora ' > 
+                    <p className='text-xm lg:text-lg text-justify pr-5  text-[#4F4F4F] font-light font-lora ' > 
                     With years of collective experience in software development and a deep
 understanding of industry-specific challenges, we've crafted a suite of
 tools that streamline operations, enhance productivity. <br />We believe in building lasting partnerships with our clients, understanding
@@ -95,13 +95,13 @@ expectations. </p>
       >
         <h1 className="text-3xl font-playfair font-bold text-dark-blue mb-4">What We Aim For</h1>
         <ul className="font-lora text-justify text-[#4F4F4F] w-[80%]">
-          <li className="flex mb-2 text-xm text-justify">
+          <li className="flex mb-2 text-xm lg:text-lg text-justify">
             At Pacam, we envision a digital landscape where organizations of all sizes can harness the power of technology to unlock their full potential. By fostering a culture of continuous innovation.
           </li>
-          <li className="flex mb-2 text-xm text-justify">
+          <li className="flex mb-2 text-xm lg:text-lg text-justify">
             Our vision extends beyond mere software; it encompasses a holistic approach to enabling growth, driving sustainable success.
           </li>
-          <Link to="/contact" className="flex py-[1rem] mt-5">
+          <Link to="/contact" className="text-xm lg:text-lg flex py-[1rem] mt-5">
             Get Started <CircleArrowRight size={19} className="ml-2 mt-[2px]" />
           </Link>
         </ul>
@@ -114,7 +114,7 @@ expectations. </p>
         <div className=" p-7 lg:ml-[45px] pt-3 col-span-1  flex flex-col justify-center ">
         <h6 className=" text-xm font-playfair font-medium text-gray-600 mb-2 ">INSPIRE EXCELLENCE</h6>
         <h1 className=" text-3xl font-playfair font-bold text-dark-blue mb-4 ">Innovation & <br /> Empowerment</h1>
-        <p className=" text-xm w-[80%] font-lora text-gray-600 mb-5">Through cutting-edge technology and forward-
+        <p className=" text-xm lg:text-lg w-[80%] font-lora text-gray-600 mb-5">Through cutting-edge technology and forward-
         thinking strategies, we empower businesses to
         take control of their digital future.
         </p>
