@@ -75,7 +75,7 @@ const ContactUs = () => {
               Efficiency Starts With PACAM
             </h1>
           </div>
-          <p className=" font-lora py-2 md:mt-0 text-neutral-500 font-light max-w-md">
+          <p className=" font-lora text-xm lg:text-lg py-2 md:mt-0 text-neutral-500 font-light max-w-md">
             Just fill in the details below, and our friendly experts will reach out to you shortly. We're excited to help!
           </p>
         </div>
