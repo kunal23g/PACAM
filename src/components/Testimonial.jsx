@@ -30,7 +30,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div ref={ref} className="p-2 max-w-[1240px] mx-auto my-3 md:grid grid-cols-2">
+    <div ref={ref} className=" border border-black p-2 max-w-[1240px] mx-auto my-3 md:grid grid-cols-2">
       
       {/* Text Content */}
       <div className="font-playfair col-span-1 p-3 lg:w-[80%] flex flex-col justify-center">
@@ -39,7 +39,7 @@ const Testimonials = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <h6 className="text-xm font-playfair font-medium text-gray-600 mb-2">
+          <h6 className="text-xl font-medium  font-playfair  text-gray-600 mb-2">
             Marketing: Enhance branding
           </h6>
         </motion.div>
@@ -59,7 +59,7 @@ const Testimonials = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 1.1 }}
         >
-          <p className="text-xm font-medium text-gray-600 mb-5">
+          <p className="text-xl font-playfair font-medium text-gray-600 mb-5">
             Deliver every customer experience uniquely unforgettable.
           </p>
         </motion.div>
@@ -68,9 +68,9 @@ const Testimonials = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 1.4 }}
-          className="font-medium"
+          className="font-medium text-lg"
         >
-          <li className="flex mb-2 text-md text-justify">
+          <li className="flex mb-2  text-justify">
             <ChartLine size={19} />
             <span className="pl-2">Boost Your Trust Factor</span>
           </li>
