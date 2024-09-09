@@ -92,7 +92,7 @@ const Footer = () => {
                 
             </div>
             
-            <div className=" flex md:flex-row flex-col justify-between mx-3 pt-4 border-t  bg-opacity-95 border-gray-700">
+            <div className=" flex md:flex-row flex-col px-2 lg:px-0 justify-between mx-3 pt-4 border-t  bg-opacity-95 border-gray-700">
                 <div>
                   <p className="text-gray-400 mb-4 lg:px-3">© 2023 Pacam. All rights reserved.</p>
                   </div>
