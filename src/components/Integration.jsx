@@ -16,7 +16,7 @@ const Integration=()=> {
         
         <div className="bg-[#F7EFE5] py-12">
   <div className=" font-playfair max-w-[1400px] mx-auto px-4 ">
-  <div className=' border justify-between text-justify lg:h-[200px]  lg:flex lg:flex-row flex-col'>
+  <div className='  justify-between text-justify lg:h-[200px]  lg:flex lg:flex-row flex-col'>
                <div className=''>
                 <h1 className='text-4xl font-bold lg:text-6xl  text-[#041558]  '><span className="  text-sm font-bold   text-neutral-500  pl-1">CONNECTED CAPABILITIES <br /></span  > Streamlined Integration </h1>
                 </div> 
