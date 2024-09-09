@@ -41,21 +41,21 @@ const Pfeatures=()=> {
         <div className="mt-10 font-playfair flex flex-nowrap   justify-between gap-2 lg:max-w-[80%] ">
           <button onClick={() => handleImg(1)} 
             
-           className={`py-4 px-6 text-sm font-light rounded-md
+           className={`py-4 px-6 text-xm font-semibold rounded-md
            ${activeButton===1 ?  'bg-[#041558] text-white' : 'hover:bg-[#041558] hover:text-white'}`}>
             PACAM IS SIMPLE
           </button>
 
 
           <button onClick={() => handleImg(2)}           
-           className={`py-4 px-6 text-sm font-light rounded-md
+           className={`py-4 px-6 text-xm font-semibold rounded-md
            ${activeButton===2 ?  'bg-[#041558] text-white' : 'hover:bg-[#041558] hover:text-white'}`}>
             PACAM IS EASY
           </button>
 
 
           <button onClick={() => handleImg(3)}           
-           className={`py-4 px-6 text-sm font-light rounded-md
+           className={`py-4 px-6 text-xm font-semibold rounded-md
            ${activeButton===3 ?  'bg-[#041558] text-white' : 'hover:bg-[#041558] hover:text-white'}`}>
             PACAM IS QUICK
           </button>
