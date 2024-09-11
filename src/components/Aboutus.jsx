@@ -9,9 +9,10 @@ import innovation from "../assets/innovation.png";
 import { CircleArrowRight } from 'lucide-react'
 import { Link, } from 'react-router-dom';
 import { motion } from 'framer-motion';
+// import Typed from 'react-typed';
+import { ReactTyped } from "react-typed";
 
-
-function Aboutus() {
+const  Aboutus=()=> {
 
 
     const [isVisible, setIsVisible] = useState(false);
@@ -135,34 +136,26 @@ expectations. </p>
         </div>
 
 {/* team members */}
-<div className='flex p-16 flex-col'>
-    <div>
-        <h1 className='text-xs text-gray-600 mb-2'>MEMBERS </h1>
-        <h1 className='text-4xl  text-dark-blue mb-6'>Meet our Team</h1>
+<div className="my-10 p-10  flex items-center justify-center ">
+      <div className="text-center p-8 bg-white shadow-lg rounded-lg  w-[1380px]">
+        <h1 className="text-4xl lg:text-6xl font-serif font-bold text-gray-800 mb-4">MEMBERS</h1>
+        
+        
+      
+    
+  <ReactTyped className='  mb-6 text-2xl lg:text-3xl font-bold font-serif text-gray-700'
+  strings={[" Meet our Team "]}
+    typeSpeed={70}
+    backSpeed={100}
+    loop
+    >
 
-        <div className='  grid md:grid-cols-2 lg:grid-cols-4 justify-around gap-20'>
-        <div className='hover:scale-105 duration-500 flex flex-col text-center col-span-1 '>
-            <img src={member1} alt="" />
-            <h1>Rohit Sir</h1>
-            <h3 className='text-md text-gray-600 mb-2'>Founder & Ceo</h3>
-        </div>
-        <div className='hover:scale-105 duration-500 flex flex-col text-center col-span-1 '>
-            <img src={member2} alt="" />
-            <h1>xyz </h1>
-            <h3 className='text-md text-gray-600 mb-2'>team Leader</h3>
-        </div>
-        <div className='hover:scale-105 duration-500 flex flex-col text-center col-span-1'>
-            <img src={member3} alt="" />
-            <h1>Shashank Sir</h1>
-            <h3 className='text-md text-gray-600 mb-2'>Sales Executive</h3>
-        </div>
-        <div className='hover:scale-105 duration-500 flex flex-col text-center col-span-1'>
-            <img src={member4} alt="" />
-            <h1>Hitesh Sir</h1>
-            <h3 className='text-md text-gray-600 mb-2'>Marketing Manager</h3>
+  </ReactTyped>
+  <div className="mt-5 pace-y-4">
+          <p className="text-3xl font-serif text-gray-700 mb-3">JUSTIN LEE</p>
+          <p className="text-3xl font-serif text-gray-700">ASHUTOSH MISHRA</p>
         </div>
         </div>
-    </div>
 </div>
 </>
 
