@@ -109,13 +109,7 @@ const Integration=()=> {
         <p className="text-justify text-gray-600 font-lora">
           Unlock the power of data with a fun and friendly guide to analytics! Dive into the world of data visualisation and learn how to turn numbers into actionable insights that can transform your decision-making. Let’s make data your best ally on this exciting journey!
         </p>
-        <div className="py-3 flex items-center mt-6">
-          <img src={Integration1} alt="Darlene Robertson" className="w-12 h-12 rounded-full" />
-          <div className="ml-4">
-            <p className="font-medium text-gray-900">Darlene Robertson</p>
-            <p className="text-gray-500">Marketing Analyst</p>
-          </div>
-        </div>
+        
       </div>
     </div>
 
